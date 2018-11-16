@@ -19,7 +19,7 @@ title: ""
 
 We carry out epidemiological and implementation research on rabies and its prevention and control in the Ngorongoro District of Mara region in Northwest Tanzania. We have a long-term contact tracing study ongoing in Ngorongoro that began in 2002.  
   
-Since the study began, we have traced `r format(ngor_overview$n_suspect_animal, big.mark=",")` suspect animal cases and `r format(ngor_overview$n_suspect_human, big.mark=",")` suspect human exposures in Ngorongoro District. 
+Since the study began, we have traced `r format(ngor_overview$n_suspect_animal, big.mark=",")` probable animal cases and `r format(ngor_overview$n_suspect_human, big.mark=",")` probable human exposures in Ngorongoro District. 
 
 Full details of our publications are on google scholar, with some links to the most relevant publications from our research in Ngorongoro are available [here](Ngor_publications.html).
 
