@@ -3,7 +3,7 @@ output_dir: "."
 # Produce navigation bar at the top of the screen with the menus
 navbar:
   # Title appears in the top left of the navbar
-  title: "Rabies Research in Ngorongoro District"
+  title: "Ngorongoro District"
   # Arrange items on the left side of the navbar (to the right of the title)
   left:
     - text: "Home"
