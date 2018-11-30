@@ -11,9 +11,9 @@ title: ""
 
 <div style="display: inline-block; ">
 
-<img src="img/ngor_map.png" style="width:300px; float: left; padding: 0 20px 20px 0; vertical-align: middle;"/>
+<img src="img/ngor_map.png" style="width: 30%; float: left; padding: 0 20px 20px 0; vertical-align: middle;"/>
 
-<div style="width: 100%; height: 30vh; display: table-cell; vertical-align: middle; margin: auto 0;">
+<div style="width: 70%; float: right; vertical-align: middle; margin: auto 0;">
 
 <br>
 
@@ -29,10 +29,12 @@ Full details of our publications are on google scholar, with some links to the m
 
 <br>
 
+<div style="display: inline-block; ">
 <center>
 
 Our work is generously supported by a range of organizations. If you would like more information, we can be contacted following the links provided at the top-right of the page.    
 
-<img src="img/logos/Funders&Partners_banner.jpg" style="width:600px;"/>  
+<img src="img/funders_partners_banner.jpg" style="width: 80%;"/>  
 
 </center>
+</div>
