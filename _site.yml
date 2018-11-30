@@ -11,11 +11,11 @@ navbar:
     - text: "About"
       menu:
         - text: "Project Information" # Name that appears on the navbar
-          href: Ngor_overview.html
+          href: about_overview.html
         - text: "Publications"
-          href: Ngor_publications.html
+          href: about_publications.html
     - text: "Epidemiology"
-      href: Ngor_Epi_report.html
+      href: data_epi.html
   # Arrange items on the right side of the navbar (social links)
   right:
     # The contact.html script currently holds a link to email team members

@@ -21,7 +21,7 @@ We carry out epidemiological and implementation research on rabies and its preve
   
 Since the study began, we have traced `r format(ngor_overview$n_suspect_animal, big.mark=",")` probable animal cases and `r format(ngor_overview$n_suspect_human, big.mark=",")` probable human exposures in Ngorongoro District. 
 
-Full details of our publications are on google scholar. Links to the most relevant publications from our research in Ngorongoro are available [here](Ngor_publications.html), and links to our other projects on rabies can be found on our <a href="https://rabiesresearch.shinyapps.io/shiny_hub/", target="blank">hub</a>.
+Full details of our publications are on google scholar. Links to the most relevant publications from our research in Ngorongoro are available [here](about_publications.html), and links to our other projects on rabies can be found on our <a href="https://rabiesresearch.shinyapps.io/shiny_hub/", target="blank">hub</a>.
 
 </div>
 
