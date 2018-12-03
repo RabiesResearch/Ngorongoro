@@ -197,16 +197,47 @@ $(document).ready(function () {
       <a href="about_overview.html">Project Information</a>
     </li>
     <li>
+      <a href="about_epi.html">Rabies Epidemiology</a>
+    </li>
+    <li>
       <a href="about_publications.html">Publications</a>
     </li>
   </ul>
 </li>
-<li>
-  <a href="data_epi.html">Epidemiology</a>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Data
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="data_epi.html">Epidemiology</a>
+    </li>
+    <li>
+      <a href="data_download.html">Download</a>
+    </li>
+  </ul>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li>
+        <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    <span class="fa fa-globe fa-lg"></span>
+     
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="https://rabiesresearch.shinyapps.io/shiny_hub/">Central Hub</a>
+    </li>
+    <li>
+      <a href="https://rabiesresearch.github.io/Serengeti/">Serengeti website</a>
+    </li>
+  </ul>
+</li>
+<li>
   <a href="contact.html">
     <span class="fa fa-envelope fa-lg"></span>
      
@@ -231,6 +262,22 @@ $(document).ready(function () {
 </div>
 
 
+<!--Add section detailing layout on different media sizes-->
+<style>
+@media screen and (max-width: 400px) {
+    .map_image {
+    width: 100%; float: left; padding: 0 20px 20px 0; vertical-align: middle; }
+    .map_text {
+    width: 100%; float: right; vertical-align: middle; margin: auto 0; }
+}
+@media screen and (min-width: 400px) {
+    .map_image {
+    width: 30%; float: left; padding: 0 20px 20px 0; vertical-align: middle; }
+    .map_text {
+    width: 70%; float: right; vertical-align: middle; margin: auto 0; }
+}
+</style>
+<!--Add breadcrumbs to top of page-->
 <ol class="breadcrumb" style="background-color:white;">
 <li class="breadcrumb-item">
 <a href="index.html">Home</a>
@@ -239,18 +286,19 @@ $(document).ready(function () {
 Project Information
 </li>
 </ol>
+<!--Page section with map image and project info-->
 <div id="project-information" class="section level1">
 <h1>Project Information</h1>
 <div style="display: inline-block; ">
-<p><img src="img/ngor_map.png" style="width: 30%; float: left; padding: 0 20px 20px 0; vertical-align: middle;"/></p>
-<div style="width: 70%; float: right; vertical-align: middle; margin: auto 0;">
-<p><br></p>
+<p><img src="img/ngor_map.png" class= "map_image"/></p>
+<div class="map_text">
 <p>We carry out epidemiological and implementation research on rabies and its prevention and control in the Ngorongoro District of Mara region in Northwest Tanzania. We have a long-term contact tracing study ongoing in Ngorongoro that began in 2002.</p>
 <p>Since the study began, we have traced 460 probable animal cases and 244 probable human exposures in Ngorongoro District.</p>
 <p>Full details of our publications are on google scholar. Links to the most relevant publications from our research in Ngorongoro are available <a href="about_publications.html">here</a>, and links to our other projects on rabies can be found on our <a href="https://rabiesresearch.shinyapps.io/shiny_hub/", target="blank">hub</a>.</p>
 </div>
 </div>
 <p><br></p>
+<!--Add a block section for 100% page width-->
 <div style="display: inline-block; ">
 <center>
 <p>Our work is generously supported by a range of organizations. If you would like more information, we can be contacted following the links provided at the top-right of the page.</p>

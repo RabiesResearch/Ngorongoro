@@ -12,12 +12,24 @@ navbar:
       menu:
         - text: "Project Information" # Name that appears on the navbar
           href: about_overview.html
+        - text: "Rabies Epidemiology"
+          href: about_epi.html
         - text: "Publications"
           href: about_publications.html
-    - text: "Epidemiology"
-      href: data_epi.html
+    - text: "Data"
+      menu:
+        - text: "Epidemiology"
+          href: data_epi.html
+        - text: "Download"
+          href: data_download.html
   # Arrange items on the right side of the navbar (social links)
   right:
+    - icon: fa-globe fa-lg
+      menu:
+        - text: "Central Hub"
+          href: https://rabiesresearch.shinyapps.io/shiny_hub/
+        - text: "Serengeti website"
+          href: https://rabiesresearch.github.io/Serengeti/
     # The contact.html script currently holds a link to email team members
     - icon: fa-envelope fa-lg
       href: contact.html
