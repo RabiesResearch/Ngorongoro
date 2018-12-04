@@ -16,7 +16,8 @@ navbar:
           href: about_epi.html
         - text: "Publications"
           href: about_publications.html
-    - text: "Data"
+    - text: "  Data"
+      icon: fa-chart-bar
       menu:
         - text: "Epidemiology"
           href: data_epi.html
@@ -28,7 +29,8 @@ navbar:
       menu:
         - text: "Central Hub"
           href: https://rabiesresearch.shinyapps.io/shiny_hub/
-        - text: "Serengeti website"
+        - text: "Serengeti District"
+          icon: img/icons/ser_map.ico
           href: https://rabiesresearch.github.io/Serengeti/
     # The contact.html script currently holds a link to email team members
     - icon: fa-envelope fa-lg
