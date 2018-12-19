@@ -30,8 +30,9 @@ navbar:
         - text: "Central Hub"
           href: https://rabiesresearch.shinyapps.io/shiny_hub/
         - text: "Serengeti District"
-          icon: img/icons/ser_map.ico
           href: https://rabiesresearch.github.io/Serengeti/
+        - text: "Philippines (SPEEDIER)"
+          href: https://rabiesresearch.github.io/SPEEDIER/
     # The contact.html script currently holds a link to email team members
     - icon: fa-envelope fa-lg
       href: contact.html
