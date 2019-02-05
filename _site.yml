@@ -10,10 +10,12 @@ navbar:
       href: index.html # The page that will appear when the name on the navbar is clicked
     - text: "About"
       menu:
-        - text: "Project Information" # Name that appears on the navbar
+        - text: "Background" # Name that appears on the navbar
           href: about_overview.html
+        - text: "--------"
         - text: "Rabies Epidemiology"
           href: about_epi.html
+        - text: "--------"
         - text: "Publications"
           href: about_publications.html
     - text: "Results"
@@ -21,10 +23,16 @@ navbar:
       menu:
         - text: "Epidemiology"
           href: data_epi.html
+        - text: "--------"
         - text: "Download Data"
           href: data_download.html
   # Arrange items on the right side of the navbar (social links)
   right:
+    - icon: fa-envelope fa-lg
+      href: mailto:Katie.Hampson@glasgow.ac.uk
+    # Currently links to the @RabidBites Twitter page
+    - icon: fa-twitter fa-lg
+      href: https://twitter.com/rabidbites
     - text: "Related Projects"
       icon: fa-globe fa-lg
       menu:
@@ -36,12 +44,6 @@ navbar:
         - text: "--------"
         - text: "Philippines (SPEEDIER)"
           href: https://rabiesresearch.github.io/SPEEDIER/
-    # The contact.html script currently holds a link to email team members
-    - icon: fa-envelope fa-lg
-      href: mailto:Katie.Hampson@glasgow.ac.uk
-    # Currently links to the @RabidBites Twitter page
-    - icon: fa-twitter fa-lg
-      href: https://twitter.com/rabidbites
 output:
   html_document:
     theme: united

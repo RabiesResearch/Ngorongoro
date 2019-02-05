@@ -2,14 +2,23 @@
 title: ""
 ---
 
+<!--Create a block for title and breadcrumbs to appear on same line-->
+<div style="width: 100%; display: inline-block;">
+<div style="float: left;">
+<h1>Rabies Incidence</h1>
+</div>
+<div style="float: right;">
 <ol class="breadcrumb" style="background-color:white;">
   <li class="breadcrumb-item"><a href="index.html">Home</a></li>
   <li class="breadcrumb-item active">Rabies Incidence</li>
 </ol>
-
-# Rabies Incidence  
+</div>
+</div>
+<hr class="hr-orange">
 
 <br>
+  
+<!--Begin page content!-->
 
 ```{r, echo=FALSE, include=FALSE, message=FALSE, warning=FALSE}
 script_district = "Ngorongoro"
@@ -33,7 +42,7 @@ y_axis_max_2012 <- find_y_max(human_dataframe=human_epi_month, animal_dataframe=
 ### Comparison of exposures and cases {.tabset .tabset-pills}  
   
 #### 2002 to present
-``` {r, echo=FALSE}
+``` {r, echo=FALSE, warning=FALSE, message=FALSE}
 epi_plot(human_dataframe=human_epi_month, animal_dataframe=animal_epi_month,
          district=script_district, start_date=start_date_1, start_month=start_month_1,
          end_date=end_date, max_y=30)
@@ -42,7 +51,7 @@ epi_plot(human_dataframe=human_epi_month, animal_dataframe=animal_epi_month,
 ***  
   
 #### 2012 to present
-``` {r, echo=FALSE}
+``` {r, echo=FALSE, warning=FALSE, message=FALSE}
 epi_plot(human_dataframe=human_epi_month, animal_dataframe=animal_epi_month,
          district=script_district, start_date=start_date_2, start_month=start_month_2,
          end_date=end_date, max_y=30)
@@ -55,7 +64,7 @@ epi_plot(human_dataframe=human_epi_month, animal_dataframe=animal_epi_month,
 The map below gives the location of probable and lab-confirmed animal Rabies cases that our team has traced in Serengeti District over the last five years.  
 This map excludes all bites where the Rabies status is not suspect or cannot be determined; village centroids are used in the case of absent coordinates. Please select from the dropdown menu to view data from a specific year:  
  
-```{r droplink, echo=FALSE}
+```{r droplink, echo=FALSE, warning=FALSE, message=FALSE}
 # Create table
 table_site <- c("html/ngor_epi_map_2018.html", "html/ngor_epi_map_2017.html",
                 "html/ngor_epi_map_2016.html", "html/ngor_epi_map_2015.html",
