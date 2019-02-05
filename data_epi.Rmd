@@ -52,7 +52,7 @@ epi_plot(human_dataframe=human_epi_month, animal_dataframe=animal_epi_month,
          end_date=end_date, max_y=30)
 ```
 
-***  
+<hr class="hr-grey">
   
 #### 2012 to present
 ``` {r, echo=FALSE, warning=FALSE, message=FALSE}
@@ -61,7 +61,7 @@ epi_plot(human_dataframe=human_epi_month, animal_dataframe=animal_epi_month,
          end_date=end_date, max_y=30)
 ```
 
-***  
+<hr class="hr-grey">
 
 ### Location of animal Rabies cases  
   
