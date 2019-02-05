@@ -2,6 +2,10 @@
 title: ""
 ---
 
+<!--Add a loading bar!-->
+<script src="pace.js"></script>
+<link href="pace_loadbar_loading.css" rel="stylesheet" />
+
 <!--Begin page content!-->
 In Tanzania, we carry out epidemiological and implementation research on rabies and its prevention and control across different parts of the country. This work has also contributed to multi-country and global studies to inform policy for rabies prevention and control.
 
