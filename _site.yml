@@ -52,4 +52,5 @@ output:
     theme: united
     include:
       in_header: header.html
+      after_body: footer.html
     css: style.css
