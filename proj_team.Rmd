@@ -73,6 +73,16 @@ Elaine uses Rabies incidence, dog bite and vaccinaion data to inform statistical
 </div>
 </div>
 </div>
+<!--Ahmed!-->
+<div class="hvrbox hvrbox_background" style="background-image: url(img/team/ahmed_l.jpg);">
+<div class="hvrbox-layer_top">
+<div class="hvrbox-text">
+<b>Ahmed Lugelo</b><br><em>AO ASPIRE PhD Student</em><br>
+<a href="https://twitter.com/alugelo", target="_blank", class="text-primary"><i class="fab fa-twitter fa-2x"></i></a><br>
+Ahmed's PhD focuses on the development of a cost-effective and sustainable strategy for regional elimination of Rabies. This involves trials to determine the the potency of thermotolerant rabies vaccine when stored in 'Temperature Controlled Storage Devices' (TCSD), and evaluation of the vaccination coverage achieved by various strategies.
+</div>
+</div>
+</div>
 <!--Matiko!-->
 <div class="hvrbox hvrbox_background" style="background-image: url(img/team/matiko_t.jpg);">
 <div class="hvrbox-layer_top">
