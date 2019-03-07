@@ -39,18 +39,15 @@ Since the study began, we have traced `r format(ngor_overview$n_suspect_animal, 
 Full details of our publications are on google scholar. Links to the most relevant publications from our research in Ngorongoro are available [here](about_publications.html), and links to our other projects on rabies can be found on our <a href="https://rabiesresearch.shinyapps.io/shiny_hub/", target="blank">hub</a>.
 
 </div>
-
 </div>
-
-<br>
 
 <!--Add a block section for 100% page width-->
 <div style="display: inline-block; ">
 <center>
 
-Our work is generously supported by a range of organizations. If you would like more information, we can be contacted following the links provided at the top-right of the page.    
+Our work is generously supported by many organizations. If you would like more information, we can be contacted via the links at the top-right.    
 
-<img src="img/funders_partners_banner.jpg" style="width: 80%;"/>  
+<img src="img/ser_banner2.jpg" style="width: 650px;"/>  
 
 </center>
 </div>
