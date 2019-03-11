@@ -391,9 +391,21 @@ $(document).ready(function () {
 </div>
 
 
+<!-- ---------------------------------------------------------------------- -->
+<!--Add javascript section for tabbed sections!-->
+<script src="tabs.js"></script>
+<body onload="document.getElementById('defaultOpen').click();">
+<!-- ---------------------------------------------------------------------- -->
+<!--Add javascript section for lightbox!-->
+<script src="lightbox.js"></script>
+<!-- ---------------------------------------------------------------------- -->
 <!--Add a loading bar!-->
 <script src="pace.js"></script>
 <p><link href="pace_loadbar_loading.css" rel="stylesheet" /></p>
+<!-- ---------------------------------------------------------------------- -->
+<!-- Add icon library -->
+<p><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"></p>
+<!-- ---------------------------------------------------------------------- -->
 <!--Create a block for title and breadcrumbs to appear on same line-->
 <div style="width: 100%; display: inline-block;">
 <div style="float: left; ">
@@ -412,12 +424,144 @@ Project Gallery
 </div>
 <hr class="hr-orange">
 <p><br></p>
+<!-- ---------------------------------------------------------------------- -->
 <!--Begin page content!-->
+<!-- Tab links, with tab 1 by default -->
+<button class="tablink" onclick="openPage('Vax', this, '#DE4815')" id="defaultOpen">
+<i class="fa fa-syringe"></i>
+</button>
+<button class="tablink" onclick="openPage('CT', this, '#DE4815')">
+<i class="fa fa-project-diagram"></i>
+</button>
+<button class="tablink" onclick="openPage('Lab', this, '#DE4815')">
+<i class="fa fa-vials"></i>
+</button>
+<button class="tablink" onclick="openPage('Train', this, '#DE4815')">
+<i class="fa fa-chalkboard-teacher"></i>
+</button>
+<!-- ---------------------------------------------------------------------- -->
+<!-- Tab 1 content -->
+<div id="Vax" class="tabcontent">
+<h3>
+Dog Vaccination
+</h3>
+<p><em>Please click on a photo to view</em></p>
+<!-- Images used to open the lightbox -->
+<div class="row">
+<div class="column">
+<p><img src="img/gallery/TZimg_Vax24.JPG" onclick="openModal1();currentSlide1(1)" class="demo1 hover-shadow" alt=""></p>
+</div>
+<div class="column">
+<p><img src="img/gallery/TZimg_Vax25.JPG" onclick="openModal1();currentSlide1(2)" class="demo1 hover-shadow" alt=""></p>
+</div>
+<div class="column">
+<p><img src="img/gallery/TZimg_Vax26.JPG" onclick="openModal1();currentSlide1(3)" class="demo1 hover-shadow" alt=""></p>
+</div>
+<div class="column">
+<p><img src="img/gallery/TZimg_Vax27.JPG" onclick="openModal1();currentSlide1(4)" class="demo1 hover-shadow" alt=""></p>
+</div>
+<div class="column">
+<p><img src="img/gallery/TZimg_Vax28.JPG" onclick="openModal1();currentSlide1(5)" class="demo1 hover-shadow" alt=""></p>
+</div>
+<div class="column">
+<p><img src="img/gallery/TZimg_Vax29.JPG" onclick="openModal1();currentSlide1(6)" class="demo1 hover-shadow" alt=""></p>
+</div>
+</div>
+<p><!-- End Gallery --></p>
+<!-- The Modal/Lightbox -->
+<div id="myModal1" class="modal">
+<div class="modal-content">
+<p><span class="close_modal cursor" onclick="closeModal1()">×</span></p>
+<!-- Images in Lightbox -->
+<div class="mySlides1">
+<div class="numbertext">
+1 / 6
+</div>
+<p><img src="img/gallery/TZimg_Vax24.JPG" class="modal-img-resp"></p>
+</div>
+<div class="mySlides1">
+<div class="numbertext">
+2 / 6
+</div>
+<p><img src="img/gallery/TZimg_Vax25.JPG" class="modal-img-resp"></p>
+</div>
+<div class="mySlides1">
+<div class="numbertext">
+3 / 6
+</div>
+<p><img src="img/gallery/TZimg_Vax26.JPG" class="modal-img-resp"></p>
+</div>
+<div class="mySlides1">
+<div class="numbertext">
+4 / 6
+</div>
+<p><img src="img/gallery/TZimg_Vax27.JPG" class="modal-img-resp"></p>
+</div>
+<div class="mySlides1">
+<div class="numbertext">
+5 / 6
+</div>
+<p><img src="img/gallery/TZimg_Vax28.JPG" class="modal-img-resp"></p>
+</div>
+<div class="mySlides1">
+<div class="numbertext">
+6 / 6
+</div>
+<p><img src="img/gallery/TZimg_Vax29.JPG" class="modal-img-resp"></p>
+</div>
+<!-- Next/previous controls -->
+<p><a class="prev" onclick="plusSlides1(-1)">❮</a> <a class="next" onclick="plusSlides1(1)">❯</a></p>
+<!-- Caption text -->
+<div class="caption-container">
+<p id="caption1">
+</p>
+</div>
+<p><!-- End Caption --></p>
+</div>
+<p><!-- End Modal content --></p>
+</div>
+<p><!-- End Lightbox --></p>
+</div>
+<p><!-- End Tab 1 --></p>
+<!-- ---------------------------------------------------------------------- -->
+<!-- Tab 2 content -->
+<div id="CT" class="tabcontent">
+<h3>
+Contact Tracing
+</h3>
 <em>
 <p class="text-primary">
 Gallery content coming soon!
 </p>
 <p></em></p>
+</div>
+<p><!-- End Tab 2 --></p>
+<!-- ---------------------------------------------------------------------- -->
+<!-- Tab 3 content -->
+<div id="Lab" class="tabcontent">
+<h3>
+Laboratory Analysis
+</h3>
+<em>
+<p class="text-primary">
+Gallery content coming soon!
+</p>
+<p></em></p>
+</div>
+<p><!-- End Tab 3 --></p>
+<!-- ---------------------------------------------------------------------- -->
+<!-- Tab 4 content -->
+<div id="Train" class="tabcontent">
+<h3>
+Training &amp; Conferences
+</h3>
+<em>
+<p class="text-primary">
+Gallery content coming soon!
+</p>
+<p></em></p>
+</div>
+<p><!-- End Tab 4 --></p>
 
 <div class="footer">
 </div>

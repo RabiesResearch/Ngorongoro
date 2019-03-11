@@ -113,7 +113,7 @@ a:hover {
 }
 
 /* ------------------------------------------------------------------------- */
-/* Create HOVERBOX */
+/* Create HOVERBOX for TEAM page */
 .hvrbox .hvrbox * {
 	box-sizing: border-box;
 }
@@ -201,4 +201,179 @@ a:hover {
 }
 .hvrbox.active .hvrbox-text_mobile {
 	display: block;
+}
+
+/* ------------------------------------------------------------------------- */
+/* Create LIGHTBOX for GALLERY page */
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Create four equal columns that floats next to eachother */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  margin-top: 50px;
+  padding-top: 1%;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.8);
+  margin: auto;
+  padding: 5px 50px 2px 50px; /* top, right, bottom, left */
+  display: inline-block;
+  width: auto;
+}
+
+.modal-img-resp {
+  margin: auto;
+  max-height: calc(100vh - 120px);
+}
+
+/* The Close Button */
+.close_modal {
+  color: white;
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close_modal:hover,
+.close_modal:focus {
+  color: #DE4815;
+  cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides1 .mySlides2 .mySlides3 {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "previous button" to the left */
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  color: #DE4815;
+  /* background-color: rgba(0, 0, 0, 0.8); */
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 15px;
+}
+
+/* Caption text */
+.caption-container {
+  text-align: center;
+  color: white;
+  font-size: 13px;
+}
+
+.demo1 .demo2 .demo3 {
+  opacity: 1;
+  cursor: pointer; /* Mouse pointer on hover */
+}
+
+.active {
+  opacity: 0.8;
+}
+
+.hover-shadow {
+  border: 1px solid #c7c7c7;
+}
+
+.hover-shadow:hover {
+  border: 1px solid black;
+  /*  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+}
+
+/* ------------------------------------------------------------------------- */
+/* Create TABS for GALLERY page */
+
+/* Set height of body and the document to 100% to enable "full page tabs" */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #FF9F55;
+  border: 2px solid #DE4815;
+  color: black;
+  float: left;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 25px;
+  width: 25%;/* 33.3333334%; */
+}
+
+.tablink:hover {
+  background-color: #DE4815;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  display: none;
+  padding: 70px 20px;
+  height: 100%;
 }

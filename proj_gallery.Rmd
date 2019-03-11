@@ -2,10 +2,25 @@
 title: ""
 ---
 
+<!-- ---------------------------------------------------------------------- --!>
+<!--Add javascript section for tabbed sections!-->
+<script src="tabs.js"></script>
+<body onload="document.getElementById('defaultOpen').click();">
+
+<!-- ---------------------------------------------------------------------- --!>
+<!--Add javascript section for lightbox!-->
+<script src="lightbox.js"></script>
+
+<!-- ---------------------------------------------------------------------- --!>
 <!--Add a loading bar!-->
 <script src="pace.js"></script>
 <link href="pace_loadbar_loading.css" rel="stylesheet" />
 
+<!-- ---------------------------------------------------------------------- --!>
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+<!-- ---------------------------------------------------------------------- --!>
 <!--Create a block for title and breadcrumbs to appear on same line-->
 <div style="width: 100%; display: inline-block;">
 <div style="float: left; ">
@@ -22,6 +37,108 @@ title: ""
 
 <br>
 
+<!-- ---------------------------------------------------------------------- --!>
 <!--Begin page content!-->
 
+<!-- Tab links, with tab 1 by default -->
+<button class="tablink" onclick="openPage('Vax', this, '#DE4815')" id="defaultOpen"><i class="fa fa-syringe"></i></button>
+<button class="tablink" onclick="openPage('CT', this, '#DE4815')"><i class="fa fa-project-diagram"></i></button>
+<button class="tablink" onclick="openPage('Lab', this, '#DE4815')"><i class="fa fa-vials"></i></button>
+<button class="tablink" onclick="openPage('Train', this, '#DE4815')"><i class="fa fa-chalkboard-teacher"></i></button>
+
+<!-- ---------------------------------------------------------------------- --!>
+<!-- Tab 1 content -->
+<div id="Vax" class="tabcontent">
+<h3>Dog Vaccination</h3>
+<em>Please click on a photo to view</em>
+
+<!-- Images used to open the lightbox -->
+<div class="row">
+<div class="column">
+<img src="img/gallery/TZimg_Vax24.JPG" onclick="openModal1();currentSlide1(1)" class="demo1 hover-shadow" alt="">
+</div>
+<div class="column">
+<img src="img/gallery/TZimg_Vax25.JPG" onclick="openModal1();currentSlide1(2)" class="demo1 hover-shadow" alt="">
+</div>
+<div class="column">
+<img src="img/gallery/TZimg_Vax26.JPG" onclick="openModal1();currentSlide1(3)" class="demo1 hover-shadow" alt="">
+</div>
+<div class="column">
+<img src="img/gallery/TZimg_Vax27.JPG" onclick="openModal1();currentSlide1(4)" class="demo1 hover-shadow" alt="">
+</div>
+<div class="column">
+<img src="img/gallery/TZimg_Vax28.JPG" onclick="openModal1();currentSlide1(5)" class="demo1 hover-shadow" alt="">
+</div>
+<div class="column">
+<img src="img/gallery/TZimg_Vax29.JPG" onclick="openModal1();currentSlide1(6)" class="demo1 hover-shadow" alt="">
+</div>
+
+</div> <!-- End Gallery -->
+
+<!-- The Modal/Lightbox -->
+<div id="myModal1" class="modal">
+<div class="modal-content">
+<span class="close_modal cursor" onclick="closeModal1()">&times;</span>
+
+<!-- Images in Lightbox -->
+<div class="mySlides1">
+<div class="numbertext">1 / 6</div>
+<img src="img/gallery/TZimg_Vax24.JPG" class="modal-img-resp">
+</div>
+<div class="mySlides1">
+<div class="numbertext">2 / 6</div>
+<img src="img/gallery/TZimg_Vax25.JPG" class="modal-img-resp">
+</div>
+<div class="mySlides1">
+<div class="numbertext">3 / 6</div>
+<img src="img/gallery/TZimg_Vax26.JPG" class="modal-img-resp">
+</div>
+<div class="mySlides1">
+<div class="numbertext">4 / 6</div>
+<img src="img/gallery/TZimg_Vax27.JPG" class="modal-img-resp">
+</div>
+<div class="mySlides1">
+<div class="numbertext">5 / 6</div>
+<img src="img/gallery/TZimg_Vax28.JPG" class="modal-img-resp">
+</div>
+<div class="mySlides1">
+<div class="numbertext">6 / 6</div>
+<img src="img/gallery/TZimg_Vax29.JPG" class="modal-img-resp">
+</div>
+
+<!-- Next/previous controls -->
+<a class="prev" onclick="plusSlides1(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides1(1)">&#10095;</a>
+
+<!-- Caption text -->
+<div class="caption-container">
+<p id="caption1"></p>
+</div> <!-- End Caption -->
+
+</div> <!-- End Modal content -->
+</div> <!-- End Lightbox -->
+</div> <!-- End Tab 1 -->
+
+<!-- ---------------------------------------------------------------------- --!>
+<!-- Tab 2 content -->
+<div id="CT" class="tabcontent">
+<h3>Contact Tracing</h3>
 <em><p class="text-primary">Gallery content coming soon!</p></em>
+
+</div> <!-- End Tab 2 -->
+
+<!-- ---------------------------------------------------------------------- --!>
+<!-- Tab 3 content -->
+<div id="Lab" class="tabcontent">
+<h3>Laboratory Analysis</h3>
+<em><p class="text-primary">Gallery content coming soon!</p></em>
+
+</div> <!-- End Tab 3 -->
+
+<!-- ---------------------------------------------------------------------- --!>
+<!-- Tab 4 content -->
+<div id="Train" class="tabcontent">
+<h3>Training & Conferences</h3>
+<em><p class="text-primary">Gallery content coming soon!</p></em>
+
+</div> <!-- End Tab 4 -->
