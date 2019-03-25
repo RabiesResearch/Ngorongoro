@@ -123,8 +123,45 @@ title: ""
 <!-- Tab 2 content -->
 <div id="CT" class="tabcontent">
 <h3>Contact Tracing</h3>
-<em><p class="text-primary">Gallery content coming soon!</p></em>
 
+<!-- Images used to open the lightbox -->
+<div class="row">
+<div class="column">
+<img src="img/gallery/TZimg_CT60.jpg" onclick="openModal2();currentSlide2(1)" class="demo1 hover-shadow" alt="">
+</div>
+<div class="column">
+<img src="img/gallery/TZimg_CT59.jpg" onclick="openModal2();currentSlide2(2)" class="demo1 hover-shadow" alt="">
+</div>
+
+
+</div> <!-- End Gallery -->
+
+<!-- The Modal/Lightbox -->
+<div id="myModal2" class="modal">
+<div class="modal-content">
+<span class="close_modal cursor" onclick="closeModal2()">&times;</span>
+
+<!-- Images in Lightbox -->
+<div class="mySlides2">
+<div class="numbertext">1 / 2</div>
+<img src="img/gallery/TZimg_CT60.jpg" class="modal-img-resp">
+</div>
+<div class="mySlides2">
+<div class="numbertext">2 / 2</div>
+<img src="img/gallery/TZimg_CT59.jpg" class="modal-img-resp">
+</div>
+
+<!-- Next/previous controls -->
+<a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides2(1)">&#10095;</a>
+
+<!-- Caption text -->
+<div class="caption-container">
+<p id="caption2"></p>
+</div> <!-- End Caption -->
+
+</div> <!-- End Modal content -->
+</div> <!-- End Lightbox -->
 </div> <!-- End Tab 2 -->
 
 <!-- ---------------------------------------------------------------------- --!>
